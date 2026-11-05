@@ -112,6 +112,35 @@ Une story est terminée lorsque :
 - Définir les statuts de commande et le moment de réservation du stock.
 - Décider du sort du PC HP mentionné dans l'inventaire.
 
+
+## 10. Backlog Administration Système — Infrastructure hybride
+
+La conception détaillée est documentée dans [docs/ADMIN-SYSTEME-PS-STORE.md](ADMIN-SYSTEME-PS-STORE.md). Les tâches ci-dessous complètent le backlog technique existant. Elles ne signifient pas que les ressources Cloud ou le matériel ont déjà été achetés.
+
+| ID | Sujet | Travail attendu | Priorité | Dépendance |
+|---|---|---|---|---|
+| SYS-01 | Cadrage infrastructure | Inventorier charge, données, contraintes métier et exigences de disponibilité. | P1 | — |
+| SYS-02 | Choix Cloud | Comparer régions, latence depuis Lubumbashi, coûts et exigences de données. | P1 | SYS-01 |
+| SYS-03 | Budget et devis | Obtenir devis Cloud, serveur Dell, UPS et connectivité. | P1 | SYS-01 |
+| SYS-04 | Environnements | Préparer développement, test et production. | P1 | SYS-02 |
+| SYS-05 | Durcissement Linux | Configurer SSH par clé, MFA, pare-feu, comptes et correctifs. | P1 | SYS-04 |
+| SYS-06 | VPN | Installer WireGuard et définir les règles d'accès réseau. | P1 | SYS-04 |
+| SYS-07 | Serveur physique | Installer et documenter le serveur secondaire et son UPS. | P1 | SYS-03 |
+| SYS-08 | Base de données | Installer PostgreSQL et définir maintenance et accès. | P1 | SYS-04 |
+| SYS-09 | Sauvegardes | Configurer Restic, chiffrement, rétention et copie hors site. | P1 | SYS-08 |
+| SYS-10 | Restauration | Réaliser un test documenté de restauration. | P1 | SYS-09 |
+| SYS-11 | Monitoring | Installer Prometheus, Grafana et Alertmanager. | P1 | SYS-04 |
+| SYS-12 | Centralisation des logs | Déployer Loki avec politique de rétention. | P2 | SYS-04 |
+| SYS-13 | Alertes | Définir seuils, tableaux de bord et canaux de notification. | P1 | SYS-11 |
+| SYS-14 | Automatisation infra | Versionner les configurations Ansible et contrôler leur exécution. | P2 | SYS-05, SYS-06 |
+| SYS-15 | CI/CD | Mettre en place GitHub Actions, tests et approbation avant production. | P1 | SYS-04 |
+| SYS-16 | Gestion incidents | Créer registre d'incidents, niveaux de gravité et procédures d'escalade. | P1 | SYS-11 |
+| SYS-17 | Tests de reprise | Simuler panne Cloud, perte VPN, panne locale et restauration. | P1 | SYS-07 à SYS-16 |
+| SYS-18 | Audit sécurité | Vérifier accès, secrets, correctifs, journaux et règles réseau. | P1 | SYS-05 à SYS-16 |
+| SYS-19 | Documentation exploitation | Rédiger runbooks, maintenance, contacts et responsabilités. | P2 | SYS-16 |
+| SYS-20 | Go/No-Go production | Valider les critères de sécurité, sauvegarde, reprise et supervision. | P1 | SYS-17 à SYS-19 |
+
+
 ---
 
-*PS STORE — Backlog Scrum initial | Version 1.0 | Novembre 2026*
+*PS STORE — Backlog Scrum initial | Version 1.1 | Novembre 2026*
