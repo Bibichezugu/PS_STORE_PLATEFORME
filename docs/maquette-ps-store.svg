@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#080d2b"/><stop offset="1" stop-color="#17114a"/></linearGradient>
+ <linearGradient id="hero" x2="1" y2="1"><stop stop-color="#07133f"/><stop offset=".55" stop-color="#075bda"/><stop offset="1" stop-color="#662dce"/></linearGradient>
+ <linearGradient id="blue" x2="1"><stop stop-color="#087bff"/><stop offset="1" stop-color="#354bff"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+ <style>
+ .txt{font-family:Arial,sans-serif;fill:#f6f7ff}.muted{font-family:Arial,sans-serif;fill:#aebbe9}
+ .panel{fill:#0d1435;stroke:#27366e;stroke-width:1.5}.card{fill:#151e46;stroke:#28376d;stroke-width:1}
+ .btn{fill:url(#blue)}.small{font-size:14px}.body{font-size:17px}.h2{font-size:25px;font-weight:bold}.title{font-size:43px;font-weight:bold}
+ </style>
+</defs>
+<rect width="1440" height="1000" fill="url(#bg)"/>
+<circle cx="1140" cy="110" r="230" fill="#145dff" opacity=".12" filter="url(#glow)"/>
+<!-- Header -->
+<rect x="28" y="24" width="1384" height="78" rx="18" class="panel"/>
+<g class="txt"><path d="M66 76 L83 46 L100 76 M75 66 H108" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><text x="123" y="72" font-size="31" font-weight="bold">PS <tspan fill="#1687ff">STORE</tspan></text></g>
+<rect x="440" y="43" width="440" height="42" rx="21" fill="#080f2d" stroke="#29376d"/>
+<text x="466" y="70" class="muted body">⌕  Rechercher un jeu, une console...</text>
+<text x="1110" y="71" class="txt body">Connexion</text><text x="1320" y="71" class="txt body">Panier  🛒</text>
+<!-- Nav -->
+<rect x="28" y="112" width="1384" height="48" rx="12" fill="#101a43"/>
+<g class="txt body"><text x="65" y="143">Accueil</text><text x="220" y="143">Jeux⌄</text><text x="345" y="143">Consoles⌄</text><text x="510" y="143">Accessoires⌄</text><text x="700" y="143">VR⌄</text><text x="825" y="143">Promotions</text><text x="1005" y="143">À propos</text></g>
+<!-- Hero -->
+<rect x="28" y="176" width="1384" height="350" rx="20" fill="url(#hero)"/>
+<circle cx="1090" cy="350" r="190" fill="#50b7ff" opacity=".25" filter="url(#glow)"/>
+<g class="txt"><text x="78" y="270" class="title">PLAYSTATION 5</text><text x="80" y="318" font-size="28">Une nouvelle ère de jeu</text><text x="80" y="355" font-size="28">commence !</text></g>
+<rect x="80" y="392" width="230" height="58" rx="12" class="btn"/><text x="112" y="429" class="txt body" font-weight="bold">Acheter maintenant →</text>
+<!-- stylized console -->
+<path d="M1000 225 Q960 235 970 285 L990 455 Q1000 475 1030 462 L1050 282 Q1055 225 1000 225Z" fill="#f7f9ff" stroke="#c8d7ff" stroke-width="4"/>
+<path d="M1060 225 Q1125 240 1115 300 L1095 450 Q1080 474 1055 457 L1040 285 Q1035 235 1060 225Z" fill="#10182f" stroke="#b9caff" stroke-width="4"/>
+<rect x="1124" y="380" width="180" height="15" rx="8" fill="#e8f2ff" opacity=".8"/>
+<text x="1160" y="440" class="txt" font-size="46" font-weight="bold">PS5</text>
+<!-- benefits -->
+<g class="txt body"><text x="78" y="492">🚚 Livraison rapide</text><text x="390" y="492">♢ Paiement sécurisé</text><text x="730" y="492">♧ Assistance client</text><text x="1050" y="492">✦ Promotions exclusives</text></g>
+<!-- categories -->
+<text x="42" y="580" class="txt h2">Nos catégories</text><text x="1290" y="580" class="muted body">Voir tout →</text>
+<g>
+ <rect x="40" y="600" width="205" height="125" rx="14" class="card"/><rect x="260" y="600" width="205" height="125" rx="14" class="card"/><rect x="480" y="600" width="205" height="125" rx="14" class="card"/><rect x="700" y="600" width="205" height="125" rx="14" class="card"/><rect x="920" y="600" width="205" height="125" rx="14" class="card"/><rect x="1140" y="600" width="250" height="125" rx="14" class="card"/>
+ <g class="txt" font-size="20" font-weight="bold"><text x="95" y="680">CONSOLES PS5</text><text x="313" y="680">JEUX PS4</text><text x="535" y="680">JEUX PS5</text><text x="750" y="680">JEUX XBOX</text><text x="965" y="680">MANETTES</text><text x="1205" y="680">ACCESSOIRES</text></g>
+ <g fill="#087bff" opacity=".7"><rect x="112" y="620" width="52" height="42" rx="7"/><rect x="330" y="620" width="52" height="42" rx="7"/><rect x="550" y="620" width="52" height="42" rx="7"/><rect x="770" y="620" width="52" height="42" rx="7"/><circle cx="1025" cy="640" r="24"/><rect x="1230" y="620" width="48" height="42" rx="7"/></g>
+</g>
+<!-- featured products -->
+<text x="42" y="790" class="txt h2">Sélection du moment</text>
+<g>
+ <rect x="40" y="812" width="320" height="155" rx="15" class="card"/><rect x="380" y="812" width="320" height="155" rx="15" class="card"/><rect x="720" y="812" width="320" height="155" rx="15" class="card"/><rect x="1060" y="812" width="330" height="155" rx="15" class="card"/>
+ <g class="txt"><text x="65" y="850" font-size="22" font-weight="bold">Jeux PS5</text><text x="65" y="884" class="muted body">Les dernières nouveautés</text><text x="65" y="930" font-size="21" fill="#4aa5ff">À partir de 69,99 €</text>
+ <text x="405" y="850" font-size="22" font-weight="bold">Console PlayStation 5</text><text x="405" y="884" class="muted body">Éditions et packs disponibles</text><text x="405" y="930" font-size="21" fill="#4aa5ff">Découvrir →</text>
+ <text x="745" y="850" font-size="22" font-weight="bold">Manettes DualSense</text><text x="745" y="884" class="muted body">Accessoires gaming</text><text x="745" y="930" font-size="21" fill="#4aa5ff">Découvrir →</text>
+ <text x="1085" y="850" font-size="22" font-weight="bold">Casques & VR</text><text x="1085" y="884" class="muted body">Plongez dans le jeu</text><text x="1085" y="930" font-size="21" fill="#4aa5ff">Découvrir →</text></g>
+</g>
+</svg>
