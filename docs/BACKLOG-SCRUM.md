@@ -28,6 +28,18 @@ Construire une plateforme e-commerce permettant aux clients de découvrir les pr
 | Scrum Master | Faciliter les événements Scrum et lever les obstacles. |
 | Équipe de développement | Concevoir, développer, tester, documenter et livrer un incrément utilisable. |
 
+### Répartition opérationnelle de l'équipe (document du groupe SGBD)
+
+| Membre | Rôle déclaré | Contribution au backlog |
+|---|---|---|
+| Sangwa Nzungu Bibiche | Master | Pilotage global, coordination, arbitrages et validation des livrables. |
+| Kalonji Ngoy Prince | Designer | Maquettes UI/UX, charte graphique et visuels de la boutique. |
+| Kabeya Kabeya Mathias | Administrateur système | Serveurs, déploiement, sécurité et base de données. |
+| Lukusa Tshileu Fabrice | Main-d'œuvre / opérations | Suivi des stocks, préparation des commandes et opérations pratiques. |
+| Kerlyno | Administrateur système | Réseau, accès utilisateurs, maintenance et performance. |
+
+Le document de répartition nomme un « Master », mais ne désigne pas explicitement un Product Owner ni un Scrum Master distincts. L'équipe doit confirmer qui assume chaque responsabilité Scrum afin d'éviter les ambiguïtés.
+
 ## 3. Règles de priorisation et estimation
 
 - **P1** : indispensable au MVP.
