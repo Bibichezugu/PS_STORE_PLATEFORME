@@ -83,3 +83,64 @@ Les travaux d'infrastructure (serveurs, réseau, VPN, sauvegardes et supervision
 Une tâche est terminée lorsque le code est intégré, les critères d'acceptation vérifiés, les tests pertinents réussis, les erreurs bloquantes corrigées, le parcours concerné adapté aux écrans visés, la documentation mise à jour et le résultat validé par le Product Owner.
 
 > **État initial :** ce document planifie le travail. Il ne constitue pas une preuve que les fonctionnalités sont déjà développées ou déployées.
+
+
+## 8. Complément issu des documents téléversés — inventaire réel et équipe
+
+Cette section traduit en tâches de plateforme les informations du **Rapport d'Équipement et Stock – PS STORE** (DOC-20261103-WA0469.pdf) et du document **Répartition officielle des membres et attributions – Groupe SGBD** (DOC-20261105-WA0611.pdf). Elle complète les stories PS-01 à PS-20 sans déclarer les produits, quantités ou prix comme déjà vérifiés.
+
+### 8.1 Périmètre catalogue à prendre en charge
+
+Le rapport d'inventaire identifie les familles suivantes :
+
+- **Jeux vidéo physiques :** titres récents et classiques sur supports PS4, PS5 et Xbox.
+- **Consoles :** PlayStation 5 standard et éditions spéciales, dont l'édition Fortnite mentionnée dans le rapport.
+- **Accessoires et périphériques :** manettes DualSense, casques audio sans fil, stations de recharge et casques VR.
+- **Matériel informatique :** ordinateur portable HP argenté, Intel Core i5 de 7e génération, ports USB, sortie vidéo, Ethernet RJ45 et prise audio. Son statut commercial (produit à vendre ou équipement interne) reste à confirmer.
+
+Le rapport ne fournit pas de références SKU, prix, quantités exactes, état unitaire, compatibilités détaillées ni photos exploitables pour chaque fiche. Ces données doivent être inventoriées et validées avant publication du catalogue.
+
+### 8.2 Tâches complémentaires liées à l'inventaire
+
+| ID | Tâche | Travail attendu | Critère de validation / preuve | Priorité | Dépendance |
+|---|---|---|---|---|---|
+| PLAT-20 | Structurer les familles et sous-catégories | Configurer Jeux physiques, Consoles, Accessoires et Périphériques ; distinguer PS4, PS5 et Xbox ; prévoir VR, manettes, casques et stations de recharge. | Les catégories et filtres correspondent aux familles réellement recensées et sont administrables. | P1 | PLAT-01, TECH-02 |
+| PLAT-21 | Compléter les attributs du catalogue gaming | Prévoir plateforme, format physique, modèle/édition, compatibilité, état neuf/occasion, marque, caractéristiques, photos, prix et disponibilité. | Les fiches peuvent décrire un jeu PS4/PS5/Xbox, une PS5 standard/édition spéciale et chaque type d'accessoire sans détourner les champs. | P1 | PLAT-04, TECH-02 |
+| PLAT-22 | Réaliser l'inventaire détaillé avant import | Pour chaque article, relever référence, nom exact, catégorie, plateforme/modèle, quantité réelle, état, prix, coût si disponible et photos ; dédoublonner et faire valider par le magasin. | Fichier d'import validé par le responsable métier ; aucune quantité ou aucun prix supposé. | P1 | PLAT-20, PLAT-21 |
+| PLAT-23 | Importer et contrôler le catalogue initial | Préparer un import contrôlé des articles validés ; signaler les lignes incomplètes ou doublons ; conserver une trace de l'import. | Échantillon vérifié dans l'administration et sur la boutique ; totaux d'import rapprochés du fichier source. | P1 | PLAT-22, PLAT-11 |
+| PLAT-24 | Classer le PC HP i5 de 7e génération | Faire confirmer s'il s'agit d'un article commercialisable ou d'un équipement interne ; si vendu, créer sa fiche avec état, spécifications, prix et stock validés ; sinon l'exclure du catalogue client. | Décision écrite du Product Owner / magasin ; aucun PC publié avant cette décision. | P2 | PLAT-22 |
+| PLAT-25 | Gérer les éditions et variantes de consoles | Permettre de distinguer PS5 standard et éditions spéciales (ex. Fortnite), avec attributs propres et stock séparé si nécessaire. | Deux éditions ne sont pas confondues dans le catalogue ou le stock. | P2 | PLAT-21, TECH-02 |
+
+### 8.3 Répartition de travail issue du document d'équipe
+
+Les personnes et rôles ci-dessous reprennent le document téléversé. Cette répartition est une proposition d'affectation du backlog ; elle ne signifie pas que les tâches ont déjà été exécutées.
+
+| Membre | Rôle indiqué dans le document | Responsabilités proposées dans le backlog |
+|---|---|---|
+| Sangwa Nzungu Bibiche | Master | Pilotage, priorisation, coordination, arbitrage des règles métier et validation des livrables (Product Owner / responsable projet à confirmer). |
+| Kalonji Ngoy Prince | Designer | Maquettes UI/UX, charte graphique, visuels publicitaires, composants et validation visuelle du storefront. |
+| Kabeya Kabeya Mathias | Administrateur Système | Infrastructure, déploiement, sécurisation de la base de données et disponibilité des environnements. |
+| Lukusa Tshileu Fabrice | Main d'œuvre | Inventaire physique, vérification des quantités/états, préparation des commandes et remontée des écarts de stock. |
+| Kerlyno | Administrateur Système | Réseau, gestion des accès, maintenance et optimisation des performances système et base de données. |
+
+**Règle d'affectation :** le Product Owner valide les données commerciales (prix, disponibilité, état, livraison et décision sur le PC HP) ; l'équipe technique ne crée pas ces valeurs par supposition. Les noms de comptes GitHub et les assignations GitHub restent à confirmer avant d'affecter des issues.
+
+### 8.4 Prochaines actions de cadrage
+
+1. Organiser un inventaire physique article par article et collecter les photos.
+2. Valider les quantités, prix, états et références avec le responsable du magasin.
+3. Décider du statut du PC HP i5 (interne ou à vendre).
+4. Confirmer les responsabilités Product Owner / Scrum Master et les comptes GitHub des membres.
+5. Importer uniquement les lignes contrôlées, puis tester le catalogue, les filtres et les stocks.
+
+### 8.5 Traçabilité documentaire
+
+- `docs/BACKLOG-SCRUM.md` : stories de référence PS-01 à PS-20, tâches TECH et SYS.
+- `docs/DESIGN-PS-STORE.md` : écrans, navigation et direction UI/UX.
+- `docs/ADMIN-SYSTEME-PS-STORE.md` : cible d'infrastructure et exploitation.
+- Document téléversé `DOC-20261103-WA0469.pdf` : caractéristiques du PC et familles de produits observées.
+- Document téléversé `DOC-20261105-WA0611.pdf` : membres et attributions de l'équipe.
+
+---
+
+*Complément inventaire et organisation — 6 novembre 2026. Les tâches ajoutées restent « À faire » jusqu'à validation avec une preuve vérifiable.*
